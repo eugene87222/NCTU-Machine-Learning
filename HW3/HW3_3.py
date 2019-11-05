@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import matplotlib.pyplot as plt
 import numpy as np
-import sys, math
+import sys, math, time
 
 def UnivariateGaussianDataGenerator(m, std):
     return m + std * (sum(np.random.uniform(0, 1, 12)) - 6)
@@ -63,7 +63,7 @@ class Matrix:
     def Add(self, matrix2):
         result = []
         for i in range(self.m):
-            result.append([i + j for (i, j) in zip(self.matrix[i], matrix2.matrix[i])])
+            result.append([a + b for (a, b) in zip(self.matrix[i], matrix2.matrix[i])])
         return Matrix(result)
     
     # return matrix^-1
@@ -140,6 +140,7 @@ if __name__ == '__main__':
     a_err = float(input('Input a: '))
     w = [float(val.strip()) for val in input('Input w: ').split(',')]
     ############################################################################
+    START = time.time()
     
     m = Matrix([[0] for i in range(0, n)]) # mean of posterior
     m_pre = Matrix([[0] for i in range(0, n)]) # mean of posterior of previous interation
@@ -205,6 +206,7 @@ if __name__ == '__main__':
             a_50 = a
             lambda_inverse_50 = LAMBDA.Inverse().matrix.copy()
     
+    print(time.time() - START)
     SubplotResult(221, 'Ground truth',     None, None, w,                       None, None,                    a_err, True)
     SubplotResult(222, 'Predict result',   x,    y,    np.reshape(m.matrix, n), a,    LAMBDA.Inverse().matrix, None,  False)
     SubplotResult(223, 'After 10 incomes', x_10, y_10, np.reshape(m_10, n),     a_50, lambda_inverse_10,       None,  False)
