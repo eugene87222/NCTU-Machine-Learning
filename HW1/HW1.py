@@ -64,7 +64,7 @@ def MatrixMultiplication(matrix1, matrix2):
 def MatrixAddition(matrix1, matrix2, n):
     result = []
     for i in range(len(matrix1)):
-        result.append([i + j * n for (i, j) in zip(matrix1[i], matrix2[i])])
+        result.append([a + b * n for (a, b) in zip(matrix1[i], matrix2[i])])
     result = [tuple(row) for row in result]
     return result
 

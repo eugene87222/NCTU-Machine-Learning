@@ -53,7 +53,7 @@ class Matrix:
     def Add(self, matrix2, n):
         result = []
         for i in range(self.m):
-            result.append([i + j * n for (i, j) in zip(self.matrix[i], matrix2.matrix[i])])
+            result.append([a + b * n for (a, b) in zip(self.matrix[i], matrix2.matrix[i])])
         return Matrix(result)
     
     # return matrix^-1
