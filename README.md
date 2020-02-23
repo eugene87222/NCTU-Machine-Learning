@@ -46,11 +46,21 @@ python3 ./HW5_2.py {1|2|3}
 ```
 
 ## HW6
-### kernel k-means
+### Kernel K-Means
 ```shell
 ./KernelKMeans.sh <k-cluster> <imagename> {kmeans++|mod|random}
 ```
-### spectral clustering
+### Spectral Clustering
 ```python
 python3 ./SpectralClustring.py <k-cluster> <imagename> {normalized|ratio} {kmeans++|random}
+```
+
+## HW7
+### Kernel Eigenfaces/Fisherfaces
+```python
+python3 ./HW7_1.py {1|2|3}
+```
+### t-SNE
+```python
+python3 ./HW7_2.py {tsne|ssne} <perplexity> <interval>
 ```
