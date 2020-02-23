@@ -36,6 +36,7 @@ python3 ./HW4_2.py
 ```
 
 ## HW5
+[Report](https://www.notion.so/eugene87222/Machine-Learning-HW5-4d293fe5c46249f29e03d7fb61fd3500)
 ### Part 1
 ```python
 python3 ./HW5_1.py
@@ -56,11 +57,11 @@ python3 ./SpectralClustring.py <k-cluster> <imagename> {normalized|ratio} {kmean
 ```
 
 ## HW7
-### Kernel Eigenfaces/Fisherfaces
-```python
-python3 ./HW7_1.py {1|2|3}
-```
-### t-SNE
-```python
-python3 ./HW7_2.py {tsne|ssne} <perplexity> <interval>
-```
+- Kernel Eigenfaces/Fisherfaces
+  ```python
+  python3 ./HW7_1.py {1|2|3}
+  ```
+- t-SNE
+  ```python
+  python3 ./HW7_2.py {tsne|ssne} <perplexity> <interval>
+  ```
