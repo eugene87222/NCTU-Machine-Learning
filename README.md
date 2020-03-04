@@ -1,46 +1,47 @@
 # Machine Learning (2019.9 ~ 2020.1)
 
 ## HW1
-```python
-python3 ./HW1[_class].py <testfile>
-```
+- Regularized linear model regression
+  ```python
+  python3 ./HW1[_class].py <testfile>
+  ```
 
 ## HW2
-- Part 1
+- Naive Bayes classifier
   ```python
   python3 ./HW2_1.py
   ```
-- Part 2
+- Online learning
   ```python
   python3 ./HW2_2.py <testfile>
   ```
 
 ## HW3
-- Part 1 & 2
+- Sequential Estimator
   ```python
   python3 ./HW3_1&2.py <mean> <variance>
   ```
-- Part 3
+- Baysian Linear regression
   ```python
   python3 ./HW3_3.py
   ```
 
 ## HW4
-- Part 1
+- Logistic regression
   ```python
   python3 ./HW4_1.py [<inputfile>]
   ```
-- Part 2
+- EM algorithm
   ```python
   python3 ./HW4_2.py
   ```
 
 ## HW5
-- Part 1
+- Gaussian Process
   ```python
   python3 ./HW5_1.py
   ```
-- Part 2
+- SVM on MNIST dataset
   ```python
   python3 ./HW5_2.py {1|2|3}
   ```
